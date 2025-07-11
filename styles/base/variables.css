@@ -21,7 +21,7 @@
   /* Primary */
   --color-primary-pressed: rgba(15, 30, 147, 1);
   --color-primary-hover: rgba(15, 30, 147, 0.8);
-  --color-primary-default: rgba(15, 30, 147, 0.6);
+  --color-primary-default: #3254ff;
   --color-primary-background: #0f1e93;
 
   /* Info */

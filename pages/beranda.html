@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chill</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body class="page-beranda">
@@ -12,13 +16,18 @@
       <nav class="navbar">
         <div class="main-nav">
           <a href="#first-page"
-            ><picture>
-              <source
-                srcset="../images/Logo-mobile.svg"
-                media="(max-width: 481px)"
+            ><div class="logo">
+              <img
+                src="../images/Logo2.svg"
+                class="logo-img"
+                alt="logo chill"
               />
-              <img src="../images/Logo.svg" alt="" />
-            </picture>
+              <img
+                src="../images/chill.svg"
+                class="logo-text"
+                alt="text chill"
+              />
+            </div>
           </a>
           <ul class="nav-links">
             <li class="nav-items"><a href="">Series</a></li>
@@ -28,13 +37,25 @@
         </div>
 
         <div class="user">
-          <img src="../images/avatar.png" alt="User Avatar" />
-          <div class="user-dropdown">
-            <img src="../images/dropdown-user.svg" alt="" />
-            <ul class="user-dropdown-list">
-              <li>Profil</li>
-              <li>Pengaturan</li>
-              <li>Keluar</li>
+          <img src="../images/avatar.png" alt="Avatar User" />
+          <div class="user-dropdown" onclick="toggleUserDropdown(event)">
+            <img src="../images/dropdown-user.svg" alt="dropdown icon" />
+            <ul class="user-dropdown-list" id="userDropdown">
+              <li>
+                <a href=""
+                  ><span class="material-icons"> person </span> Profil Saya</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><span class="material-icons"> star </span>Ubah Premium</a
+                >
+              </li>
+              <li>
+                <a href="../index.html"
+                  ><span class="material-icons"> exit_to_app </span>Keluar</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -614,6 +635,7 @@
     </footer>
   </body>
   <script>
+    // Scroll Film
     const carousels = document.querySelectorAll(".list-film");
 
     carousels.forEach((scrollContainer) => {
@@ -621,7 +643,6 @@
       const btnLeft = wrapper.querySelector(".btn-left");
       const btnRight = wrapper.querySelector(".btn-right");
 
-      // Ambil nilai scrollAmount dari data attribute
       const scrollAmount = parseInt(wrapper.dataset.scroll) || 326;
 
       btnLeft.addEventListener("click", () => {
@@ -637,6 +658,19 @@
           behavior: "smooth",
         });
       });
+    });
+
+    // Dropdown Action
+    function toggleUserDropdown(event) {
+      event.stopPropagation();
+
+      const dropdown = document.getElementById("userDropdown");
+      dropdown.classList.toggle("show");
+    }
+
+    window.addEventListener("click", function () {
+      const dropdown = document.getElementById("userDropdown");
+      dropdown.classList.remove("show");
     });
   </script>
 </html>

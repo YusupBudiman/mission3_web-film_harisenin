@@ -164,6 +164,15 @@
     gap: 12px;
   }
 
+  .logo-img {
+    width: 20px;
+    height: 18px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
   .main-nav,
   .nav-links {
     gap: 12px;
@@ -177,6 +186,25 @@
   .user-dropdown img {
     width: 8px;
     height: 4.98px;
+  }
+
+  .user-dropdown-list {
+    width: 113px;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .user-dropdown-list li {
+    padding: 4px 8px;
+  }
+
+  .user-dropdown-list a {
+    padding: 4px 8px;
+  }
+
+  .user-dropdown-list .material-icons {
+    font-size: 14px;
   }
 
   /* ================================= */
