@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body class="page-register auth">
+    <main class="main-register">
+      <section class="login-container">
+        <div class="card-login">
+          <div class="login-header">
+            <img src="images/Logo.svg" alt="" />
+          </div>
+          <div class="login-subheader">
+            <h3>Daftar</h3>
+            <p class="body-medium regular">Selamat datang!</p>
+          </div>
+
+          <form action="">
+            <div class="login-form">
+              <label class="body-large medium" for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                placeholder="Masukkan username"
+                required
+              />
+            </div>
+
+            <div class="password-form">
+              <div class="login-form">
+                <label class="body-large medium" for="password"
+                  >Kata Sandi</label
+                >
+                <div class="input-password">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Masukkan password"
+                    required
+                  />
+                  <button type="button" class="toggle-password">
+                    <img src="images/eye-off.svg" alt="lihat" id="eyeicon" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="password-form">
+              <div class="login-form">
+                <label class="body-large medium" for="password"
+                  >Konfirmasi Kata Sandi</label
+                >
+                <div class="input-password">
+                  <input
+                    type="password"
+                    name="password-confirm"
+                    placeholder="Masukkan password"
+                    required
+                  />
+                  <button type="button" class="toggle-password">
+                    <img src="images/eye-off.svg" alt="lihat" id="eyeicon" />
+                  </button>
+                </div>
+              </div>
+              <div class="register body-small regular">
+                <p>Sudah punya akun?<a href="index.html">Masuk</a></p>
+              </div>
+            </div>
+          </form>
+
+          <div class="btn-group">
+            <button type="submit" class="btn-login">Daftar</button>
+            <p class="body-small medium">Atau</p>
+            <button class="btn-login-google">
+              <img src="images/logo-google.svg" alt="" /><a href=""
+                >Daftar dengan Google</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

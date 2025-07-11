@@ -1,0 +1,31 @@
+/* Base */
+@import url("base/variables.css"); /* Warna, font, spacing, dll */
+@import url("base/reset.css"); /* Reset dan gaya dasar */
+@import url("base/typography.css"); /* Gaya teks & heading */
+
+/* Layout */
+@import url("layout/layout.css"); /* Struktur halaman (header, main, footer, dsb) */
+@import url("layout/container.css"); /* layout container */
+
+/* Components */
+@import url("components/navbar.css"); /* Tombol, card, form, modal, dll */
+@import url("components/form.css"); /* Formulir */
+@import url("components/card.css"); /* Card */
+@import url("components/button.css"); /* Tombol */
+@import url("components/footer.css"); /* Footer */
+@import url("pages/index.css"); /* Card */
+
+/* Page */
+@import url("pages/beranda.css"); /* Halaman beranda */
+
+/* Utils */
+@import url("utils/media-queries.css"); /* Media queries untuk responsif */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utils */
+.display-none {
+  display: none;
+}
